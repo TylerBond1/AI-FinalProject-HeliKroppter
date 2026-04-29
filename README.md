@@ -83,7 +83,7 @@ Coverage: 85.0% of students (17/20)
 2. Create a virtual environment:
 
    ```
-   python -m venv venv
+   python -m venv .venv
    ```
 
 3. Activate the virtual environment:
@@ -91,19 +91,19 @@ Coverage: 85.0% of students (17/20)
    **Mac/Linux:**
 
    ```
-   source venv/bin/activate
+   source .venv/bin/activate
    ```
 
    **Windows:**
 
    ```
-   venv\Scripts\activate
+   .venv\Scripts\activate
    ```
 
 4. Install dependencies:
 
    ```
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 ---
@@ -113,7 +113,7 @@ Coverage: 85.0% of students (17/20)
 Run the program with:
 
 ```
-python main.py inData.txt
+python3 main.py
 ```
 ---
 
