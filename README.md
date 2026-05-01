@@ -10,7 +10,7 @@ The goal is to minimize scheduling conflicts and provide time options that work 
 
 ## Features
 
-* Parses and processes multiple student schedules
+* Parses and processes multiple student schedules 
 * Identifies conflicts across time blocks
 * Computes student availability outside scheduled classes
 * Ranks and selects optimal office hour time slots
