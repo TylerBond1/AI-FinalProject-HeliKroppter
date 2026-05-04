@@ -44,12 +44,11 @@ class MainApi:
         return result;
 
     def _play_button_sound(self):
-        button_sound = pygame.mixer.Sound(random.choice(["vova-buhh.ogg", "tyler-buhh.ogg", "ollie-buhh.ogg", "jake-buhh.ogg"]))
+        button_sound = pygame.mixer.Sound(random.choice(["sound4.ogg", "sound3.ogg", "sound2.ogg", "sound1.ogg"]))
         button_sound.set_volume(random.choice([.7, .9, 1]))
         button_sound.play()
 
     def button_pressed(self, input: list):
-        self._play_button_sound();
         if len(input) != len(fields(ButtonInput)): return
 
         button_input = ButtonInput(*input)
@@ -61,7 +60,7 @@ class MainApi:
 
         df = df.set_index(df.columns[0])  # makes student names the index
         availability = 1 - df
-        #availability = availability.drop(columns=['M10', 'W10', 'F10'])
+        availability = availability.drop(columns=['M10', 'W10', 'F10'])
         availability = availability.drop(columns=button_input.unavailable_hours.split(","))
 
         # Get list of students and time slots
