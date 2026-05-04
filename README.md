@@ -117,7 +117,7 @@ python3 main.py
 ```
 ---
 
-## Dependencie
+## Dependencies
 
 * Python 3.x
 * pandas
